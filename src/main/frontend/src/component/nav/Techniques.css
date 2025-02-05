@@ -1,0 +1,79 @@
+/*쿼리 조정 완료*/
+
+
+.items_Tech {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 아이템을 왼쪽으로 정렬 */
+  margin-left: 0px; /* 왼쪽 여백을 설정하여 중앙에 오게 */
+  margin-bottom: 50px;
+}
+
+.item_tech {
+  display: flex;
+  align-items: flex-start; /* 아이템의 내용들을 수직으로 시작점 정렬 */
+  gap: 20px;
+  margin-bottom: 20px; /* 마지막 아이템을 제외한 간격 */
+}
+
+.item_tech svg {
+  width: 60px;
+  height: auto; /* 높이를 자동으로 조정 */
+  flex-shrink: 0;
+}
+
+.item_tech img {
+  width: 40px; /* 아이콘 크기 */
+  height: auto; /* 높이를 자동으로 조정 */
+  flex-shrink: 0;
+}
+
+.item_tech p {
+  color: #00d8ff;
+  font-family: Inter, sans-serif; /* 폰트 설정 */
+  font-size: 25px; /* 폰트 크기를 줄임 */
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  white-space: nowrap; /* 텍스트가 한 줄로만 표시되도록 설정 */
+}
+
+/* iPad Air 2 (768px x 1024px) */
+@media (max-width: 768px) {
+  .item_tech {
+    gap: 15px; /* iPad Air 2 화면에서의 아이템 간격 */
+    margin-bottom: 15px; /* iPad Air 2 화면에서의 아이템 간격 */
+  }
+
+  .item_tech svg {
+    width: 50px; /* iPad Air 2 화면에서의 아이콘 크기 */
+  }
+
+  .item_tech img {
+    width: 30px; /* iPad Air 2 화면에서의 아이콘 크기 */
+  }
+
+  .item_tech p {
+    font-size: 20px; /* iPad Air 2 화면에서의 폰트 크기 */
+  }
+}
+
+/* iPhone 13 (390px x 844px) */
+@media (max-width: 390px) {
+  .item_tech {
+    gap: 10px; /* iPhone 13 화면에서의 아이템 간격 */
+    margin-bottom: 10px; /* iPhone 13 화면에서의 아이템 간격 */
+  }
+
+  .item_tech svg {
+    width: 40px; /* iPhone 13 화면에서의 아이콘 크기 */
+  }
+
+  .item_tech img {
+    width: 25px; /* iPhone 13 화면에서의 아이콘 크기 */
+  }
+
+  .item_tech p {
+    font-size: 18px; /* iPhone 13 화면에서의 폰트 크기 */
+  }
+}

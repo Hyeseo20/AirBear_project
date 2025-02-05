@@ -1,0 +1,109 @@
+/*쿼리 조정*/
+
+.mobile {
+  margin-left: 100px;
+  position: relative;
+  text-align: left;
+  display: flex;
+  align-items: center; /* 수직 정렬을 중앙으로 변경 */
+  justify-content: flex-start; /* 수평 정렬을 왼쪽으로 설정 */
+  background-size: cover;
+  margin-bottom: 70px;
+}
+
+.mob {
+
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute; /* 텍스트를 절대적으로 배치 */
+  top: 5%; /* 부모 요소의 상단에 배치 */
+  left: 2%; /* 부모 요소의 왼쪽에 배치 */
+  transform: translate(0, 0); /* 텍스트를 원래 위치로 이동하지 않도록 함 */
+}
+
+.mob_2 {
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute; /* 텍스트를 절대적으로 배치 */
+  top: 70%;
+  left: 2%; /* 부모 요소의 왼쪽에 배치 */
+  transform: translate(0, 0); /* 텍스트를 원래 위치로 이동하지 않도록 함 */
+}
+
+.rectangle {
+  width: 600px; /* 사각형의 너비 */
+  height: 500px; /* 사각형의 높이 */
+  border: 3px solid #fff; /* 사각형의 테두리 */
+  border-radius: 20px; /* 사각형의 모서리 둥글게 */
+  margin-left: 50px; /* 왼쪽 아이템과의 간격 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* iPad Air 2 (768px x 1024px) */
+@media (max-width: 768px) {
+  .mobile {
+    margin-left: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
+
+  .mob {
+    font-size: 30px;
+    top: 10%;
+    left: 5%;
+  }
+
+  .mob_2 {
+    font-size: 18px;
+    top: 75%;
+    left: 5%;
+  }
+
+  .rectangle {
+    width: 80%;
+    height: auto;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+}
+
+/* iPhone 13 (390px x 844px) */
+@media (max-width: 390px) {
+  .mobile {
+    margin-left: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .mob {
+    font-size: 25px;
+    top: 15%;
+    left: 5%;
+  }
+
+  .mob_2 {
+    font-size: 16px;
+    top: 80%;
+    left: 5%;
+  }
+
+  .rectangle {
+    width: 90%;
+    height: auto;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,142 @@
+/*쿼리 조정 완료*/
+
+.recruiting-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* 수직 가운데 정렬 */
+  height: 100vh; /* 전체 화면 높이 */
+}
+
+.cmon {
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.newmember {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.newmember p {
+  color: #00d8ff;
+  font-family: Inter;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.recruit_posting {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.recruit_nav {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  height: 50px; /* 높이 조정 */
+  border-radius: 30px;
+  background-color: #ffffff;
+  padding: 10px;
+  border: 3px solid #00d8ff;
+  margin-right: 780px;
+}
+
+.recruit_nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; /* 각 항목 사이의 간격을 균등하게 설정 */
+  width: 100%;
+}
+
+.recruit_nav-links li {
+  padding: 0 10px; /* 좌우 여백 */
+}
+
+.recruit_nav-links a {
+  color: #00d8ff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.recruit_nav-links a:hover {
+  color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .newmember p {
+    font-size: 40px; /* 태블릿에서 폰트 크기 조정 */
+  }
+
+  .recruit_nav {
+    width: 90%; /* 태블릿에서 너비 조정 */
+    margin-right: 0; /* 태블릿에서 오른쪽 마진 제거 */
+  }
+
+  .recruit_nav-links a {
+    font-size: 16px; /* 태블릿에서 링크 폰트 크기 조정 */
+  }
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 1024px) {
+  .newmember p {
+    font-size: 50px; /* 아이패드 크기에 맞게 폰트 크기 조정 */
+  }
+
+  .recruit_nav {
+    width: 80%; /* 아이패드에서 너비 조정 */
+    margin-right: 0; /* 아이패드에서 오른쪽 마진 제거 */
+  }
+
+  .recruit_nav-links a {
+    font-size: 18px; /* 아이패드에서 링크 폰트 크기 조정 */
+  }
+}
+
+@media (max-width: 768px) {
+  .newmember p {
+    font-size: 40px; /* 태블릿에서 폰트 크기 조정 */
+  }
+
+  .recruit_nav {
+    width: 90%; /* 태블릿에서 너비 조정 */
+    margin-right: 0; /* 태블릿에서 오른쪽 마진 제거 */
+  }
+
+  .recruit_nav-links a {
+    font-size: 16px; /* 태블릿에서 링크 폰트 크기 조정 */
+  }
+}
+
+@media (max-width: 480px) {
+  .newmember p {
+    font-size: 30px; /* 작은 화면에서 폰트 크기 조정 */
+  }
+
+  .recruit_nav {
+    width: 100%; /* 작은 화면에서 너비 조정 */
+    margin-right: 0; /* 작은 화면에서 오른쪽 마진 제거 */
+  }
+
+  .recruit_nav-links a {
+    font-size: 14px; /* 작은 화면에서 링크 폰트 크기 조정 */
+  }
+}

@@ -1,0 +1,497 @@
+/*쿼리 조정 완료*/
+
+
+.page_mine {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.mine_header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.mine_header h1 {
+  color: #00d8ff;
+  font-family: Inter;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-left: 15px;
+}
+
+.logo_mypage {
+  display: flex;
+  align-items: center;
+  margin-left: 90px;
+  margin-bottom: 30px;
+}
+
+.logo_mypage svg {
+  width: 90px; /* 로고 크기 조절 */
+  height: 90px; /* 비율을 유지하며 높이를 자동으로 설정 */
+  margin-right: 10px; /* 텍스트와 로고 사이 간격 조절 */
+}
+
+.logo_mypage span {
+  color: #00d8ff;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.cards-container {
+  display: flex; /* Flexbox를 활용하여 자식 요소들을 수평으로 배치 */
+  justify-content: space-between; /* 요소들 사이에 공간을 균등하게 배분 */
+  align-items: flex-start; /* 요소들을 컨테이너의 시작점에 맞춤 */
+}
+
+.hi-card,
+.date-card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.date-card {
+  width: 500px;
+  height: 820px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 3px solid rgba(0, 216, 255, 0.66);
+  background: #fff;
+}
+
+.profile-image {
+  width: 200px;
+  height: 210px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.hi-card svg {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.cards-container h2 {
+  color: #000;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.cards-container p {
+  color: #00d8ff;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.greeting_mine p {
+  color: #00a8ff;
+  margin-bottom: 10px;
+}
+
+.extra-space_api {
+  height: 200px; /* 추가적인 공간을 확보 */
+}
+
+.mypage_intro {
+  margin-left: 20px;
+}
+.mypage_intro h2 {
+  margin-right: 350px;
+  color: #00d8ff;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  white-space: nowrap;
+}
+.mypage_intro p {
+  margin-right: 350px;
+  color: #00d8ff;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.facebear {
+  margin-top: 1px;
+  margin-right: 400px;
+}
+
+ .fc {
+   background-color: #ffffff; /* 전체 캘린더 배경 색상 */
+   border-radius: 15px;
+   padding: 10px;
+   width: 850px; /* 캘린더 너비 고정 */
+   height: 600px; /* 캘린더 높이 고정 */
+   margin-left: 0;
+   overflow: hidden; /* 스크롤 제거 */
+ }
+
+.fc .fc-toolbar {
+  background-color: #00d8ff; /* 툴바 배경 색상 */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.fc .fc-toolbar-title {
+  color: #ffffff; /* 타이틀 글자 색상 */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.fc .fc-button {
+  background-color: #00a6cc; /* 버튼 배경 색상 */
+  color: #ffffff; /* 버튼 글자 색상 */
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.fc .fc-button:hover {
+  background-color: #008bb3; /* 호버 시 버튼 배경 색상 */
+}
+
+.fc .fc-button:active {
+  background-color: #007299; /* 클릭 시 버튼 배경 색상 */
+}
+
+.fc .fc-button-primary {
+  background-color: #00a6cc;
+  color: #ffffff;
+}
+
+.fc .fc-button-primary:hover {
+  background-color: #008bb3;
+}
+
+.fc .fc-button-primary:active {
+  background-color: #007299;
+}
+
+.fc .fc-daygrid-day {
+  border: 2px solid #00d8ff; /* 그리드 경계 색상 */
+  background-color: #fffff;
+}
+
+.fc .fc-daygrid-day-number {
+  color: #00d8ff;
+  font-weight: 800;/* 날짜 숫자 색상 */
+  font-size: 15px;
+}
+
+.fc .fc-col-header-cell-cushion {
+  color: #00d8ff; /* 요일 글씨 색상 */
+  font-weight: 800;/* 날짜 숫자 색상 */
+  font-size: 18px;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+  background-color: #2310FF; /* 오늘 날짜 배경 색상 */
+}
+
+.fc .fc-daygrid-event {
+  background-color: #00d8ff; /* 이벤트 배경 색상 */
+  color: #ffffff; /* 이벤트 글자 색상 */
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.checklist-container {
+  background-color: #ffffff; /* 전체 캘린더 배경 색상 */
+  border-radius: 15px;
+  padding: 10px;
+  width: 800px; /* 캘린더 너비 고정 */
+  height: 600px; /* 캘린더 높이 고정 */
+  margin-left: 0;
+  overflow: hidden; /* 스크롤 제거 */
+}
+
+.checklist-container h2 {
+  margin-bottom: 10px;
+  color: #00d8ff;
+}
+
+.checklist-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.checklist-container li {
+  margin-bottom: 10px;
+}
+
+.checklist-container li {
+  margin-bottom: 10px;
+  color: #000F75; /* 항목 글자색 변경 */
+  font-weight: 500;
+}
+
+.checklist-container input {
+  width: 500px; /* 캘린더 너비 고정 */
+  height: 30px;
+    padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+
+}
+
+.checklist-container button {
+  padding: 5px 10px;
+  background-color: #00d8ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checklist-container button:hover {
+  background-color: #00a6cc;
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 1024px) {
+  .mine_header h1 {
+    font-size: 50px;
+  }
+
+  .logo_mypage {
+    margin-left: 20px;
+  }
+
+  .logo_mypage svg {
+    width: 70px;
+    height: 70px;
+  }
+
+  .logo_mypage span {
+    font-size: 30px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .date-card,
+  .checklist-container {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 160px;
+  }
+
+  .cards-container h2 {
+    font-size: 30px;
+  }
+
+  .cards-container p {
+    font-size: 25px;
+  }
+
+  .mypage_intro h2 {
+    margin-right: 0;
+    font-size: 30px;
+  }
+
+  .mypage_intro p {
+    margin-right: 0;
+    font-size: 25px;
+  }
+
+  .facebear {
+    margin-right: 0;
+  }
+
+  .fc {
+    width: 100%;
+    height: auto;
+  }
+
+  .fc .fc-toolbar-title {
+    font-size: 20px;
+  }
+
+  .fc .fc-daygrid-day-number,
+  .fc .fc-col-header-cell-cushion {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mine_header h1 {
+    font-size: 40px;
+  }
+
+  .logo_mypage {
+    margin-left: 10px;
+  }
+
+  .logo_mypage svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo_mypage span {
+    font-size: 25px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .date-card,
+  .checklist-container {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 110px;
+  }
+
+  .cards-container h2 {
+    font-size: 25px;
+  }
+
+  .cards-container p {
+    font-size: 20px;
+  }
+
+  .mypage_intro h2 {
+    margin-right: 0;
+    font-size: 25px;
+  }
+
+  .mypage_intro p {
+    margin-right: 0;
+    font-size: 20px;
+  }
+
+  .facebear {
+    margin-right: 0;
+  }
+
+  .fc {
+    width: 100%;
+    height: auto;
+  }
+
+  .fc .fc-toolbar-title {
+    font-size: 18px;
+  }
+
+  .fc .fc-daygrid-day-number,
+  .fc .fc-col-header-cell-cushion {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mine_header h1 {
+    font-size: 30px;
+  }
+
+  .logo_mypage {
+    margin-left: 5px;
+  }
+
+  .logo_mypage svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo_mypage span {
+    font-size: 20px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .date-card,
+  .checklist-container {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .profile-image {
+    width: 80px;
+    height: 90px;
+  }
+
+  .cards-container h2 {
+    font-size: 20px;
+  }
+
+  .cards-container p {
+    font-size: 18px;
+  }
+
+  .mypage_intro h2 {
+    margin-right: 0;
+    font-size: 20px;
+  }
+
+  .mypage_intro p {
+    margin-right: 0;
+    font-size: 18px;
+  }
+
+  .facebear {
+    margin-right: 0;
+  }
+
+  .fc {
+    width: 100%;
+    height: auto;
+  }
+
+  .fc .fc-toolbar-title {
+    font-size: 16px;
+  }
+
+  .fc .fc-daygrid-day-number,
+  .fc .fc-col-header-cell-cushion {
+    font-size: 10px;
+  }
+}

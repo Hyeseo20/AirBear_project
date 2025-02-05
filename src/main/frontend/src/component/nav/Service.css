@@ -1,0 +1,135 @@
+
+/*쿼리 조정 완료*/
+
+
+.servicebody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.highlight {
+  color: #0056b3;
+}
+
+.mountain,
+.community,
+.pencil,
+.idea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.mountain p,
+.community p,
+.pencil p,
+.idea p {
+  color: #00d8ff;
+  font-family: Inter, sans-serif;
+  font-size: 2vw; /* 반응형 폰트 크기 */
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin: 0; /* margin-left 제거 */
+  white-space: nowrap;
+}
+
+.mountain img,
+.community img,
+.pencil img,
+.idea img {
+  width: 80vw; /* 반응형 이미지 크기 */
+  max-width: 600px; /* 최대 너비 설정 */
+  height: auto; /* 높이를 자동으로 조정 */
+  flex-shrink: 0;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.mountain_container,
+.community_container,
+.pencil_container,
+.idea_container {
+  margin-bottom: 5vw; /* 반응형 마진 */
+  max-width: 800px; /* 최대 너비 설정 */
+  width: 90vw; /* 반응형 너비 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  .mountain p,
+  .community p,
+  .pencil p,
+  .idea p {
+    font-size: 30px; /* 더 큰 화면에서는 고정된 폰트 크기 사용 */
+  }
+
+  .mountain img,
+  .community img,
+  .pencil img,
+  .idea img {
+    width: 600px; /* 더 큰 화면에서는 고정된 이미지 크기 사용 */
+  }
+
+  .mountain_container,
+  .community_container,
+  .pencil_container,
+  .idea_container {
+    margin-bottom: 120px; /* 더 큰 화면에서는 고정된 마진 사용 */
+  }
+}
+
+/* iPad Air 2 (768px x 1024px) */
+@media (max-width: 768px) {
+  .mountain p,
+  .community p,
+  .pencil p,
+  .idea p {
+    font-size: 4vw; /* iPad Air 2 화면에서의 폰트 크기 */
+  }
+
+  .mountain img,
+  .community img,
+  .pencil img,
+  .idea img {
+    width: 70vw; /* iPad Air 2 화면에서의 이미지 너비 */
+  }
+
+  .mountain_container,
+  .community_container,
+  .pencil_container,
+  .idea_container {
+    margin-bottom: 8vw; /* iPad Air 2 화면에서의 마진 */
+  }
+}
+
+/* iPhone 13 (390px x 844px) */
+@media (max-width: 390px) {
+  .mountain p,
+  .community p,
+  .pencil p,
+  .idea p {
+    font-size: 6vw; /* iPhone 13 화면에서의 폰트 크기 */
+  }
+
+  .mountain img,
+  .community img,
+  .pencil img,
+  .idea img {
+    width: 90vw; /* iPhone 13 화면에서의 이미지 너비 */
+  }
+
+  .mountain_container,
+  .community_container,
+  .pencil_container,
+  .idea_container {
+    margin-bottom: 10vw; /* iPhone 13 화면에서의 마진 */
+  }
+}

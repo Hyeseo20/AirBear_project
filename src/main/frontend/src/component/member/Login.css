@@ -1,0 +1,150 @@
+/*쿼리 조정 완료*/
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 1650px;
+  height: 500px;
+  border-radius: 20px;
+  border: 3px solid #ffffff;
+  background: #ffffff;
+}
+
+.text,
+.password {
+  color: #000;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.login-input {
+  width: 238px;
+  height: 37px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 3px solid #00d8ff;
+  background: #fff;
+  margin-right: 5px;
+  margin-bottom: 30px;
+}
+
+.login-input::placeholder {
+  color: #00d8ff; /* 원하는 색상으로 변경하세요 */
+}
+
+.login-button_real {
+  width: 75px;
+  height: 37px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #00d8ff;
+  border: 3px solid #00d8ff;
+}
+
+.login-button_real {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.under {
+  display: flex;
+  align-items: center;
+}
+
+svg {
+  margin-right: 30px; /* svg와 p 사이의 간격 조절 */
+}
+.under p {
+  color: #00d8ff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.login-button_real:hover {
+  background-color: #0056b3;
+}
+
+.login-button_real:hover,
+.login-input:hover {
+  background-color: #00d8ff;
+}
+
+/* iPad Air 2 (768px x 1024px) */
+@media (max-width: 768px) {
+  .login-container {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .text,
+  .password {
+    font-size: 20px;
+  }
+
+  .login-input {
+    width: 80%;
+    height: 35px;
+    margin-bottom: 20px;
+  }
+
+  .login-button_real {
+    width: 70px;
+    height: 35px;
+  }
+
+  .under p {
+    font-size: 20px;
+  }
+
+  svg {
+    margin-right: 20px;
+  }
+}
+
+/* iPhone 13 (390px x 844px) */
+@media (max-width: 390px) {
+  .login-container {
+    width: 95%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .text,
+  .password {
+    font-size: 18px;
+  }
+
+  .login-input {
+    width: 90%;
+    height: 30px;
+    margin-bottom: 15px;
+  }
+
+  .login-button_real {
+    width: 65px;
+    height: 30px;
+  }
+
+  .under p {
+    font-size: 18px;
+  }
+
+  svg {
+    margin-right: 15px;
+  }
+}
